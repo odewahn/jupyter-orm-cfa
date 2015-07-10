@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>On Demand Analytic and Learning Environments with Jupyter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/shower-ribbon/styles/screen.css">
+</head>
+<body class="list">
+	<style>
+		#Picture h2 {
+			color:#FFF;
+			}
+
+		#Cover h2 {
+			margin:30px 0 0;
+			text-align:center;
+			font-size:90px;
+			color: #fff;
+		}
+		#Cover p {
+			margin:10px 0 0;
+			text-align:center;
+			font-style:italic;
+			font-size:30px;
+			color: #ddd;
+		}
+	  .slide-img {
+	  	display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  }
+
+		#Author h2 {
+			margin:30px 0 0;
+			color:#FFF;
+			text-align:center;
+			font-size:70px;
+		}
+		#Author p {
+			margin:10px 0 0;
+			text-align:center;
+			color:#FFF;
+			font-style:italic;
+			font-size:20px;
+		}
+		#Author p a {
+			color:#FFF;
+		}
+	  #questions {
+			color: white;
+		}
+		#questions img {
+			filter: blur(.5) grayscale(1) invert(1);
+			-webkit-filter: blur(.5) grayscale(1) invert(1);
+		}
+	</style>
+
+	<header class="caption">
+		<h1>Publishing Workflows for Jupyter</h1>
+        <p>Andrew Odewahn; CTO O'Reilly Media; <a href="https://twitter.com/odewahn">@odewahn</a></p>
+				<h2>Harvard Center for Astrophysics</h2>
+				<p>July 13, 2015</p>
+	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>Publishing Workflows for Jupyter</h2>
+        <p>Andrew Odewahn; CTO O'Reilly Media; <a href="https://twitter.com/odewahn">@odewahn</a></p>
+				<p><em>Harvard Center for Astrophysics</em></p>
+				<p>July 13, 2015</p>
+
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Not These People</h2>
+		<img src="pictures/not-this-guy.png" class="slide-img" style="width: 60%" alt="Typity type type">
+
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>These People</h2>
+		<img src="pictures/about-orm.png" class="slide-img" style="width: 80%" alt="Typity type type">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>This Person</h2>
+		<img src="pictures/oreilly-beta.png" class="slide-img" style="float:right; width: 50%" alt="Typity type type">
+		<ul>
+			<li>Founder of <a href="https://atlas.oreilly.com">Atlas</a>, O'Reilly Media's next generation authoring tool</li>
+			<li>Author of <a href="http://sites.oreilly.com/odewahn/dds-field-guide/">DDS Field Guide</a> and <a href="http://odewahn.github.io/docker-jumpstart/">Docker Jumpstart</a></li>
+			<li>Executive sponsor for <a href="https://beta.oreilly.com">beta.oreilly.com</a></li>
+			<li>Currently exploring how to produce "next generation content"</li>
+		</ul>
+
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Atlas: O'Reilly's Publishing Toolchain</h2>
+		<img src="pictures/atlas-key-ideas.png" class="slide-img" style="width: 80%" alt="Typity type type">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Authoring with O'Reilly</h2>
+		<img src="pictures/tim-tweet.png" class="slide-img" style="float:right; width: 50%" alt="Typity type type">
+		<ul>
+			<li>Many options: <a href="http://oreillymedia.github.io/HTMLBook/">HTML</a>, <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a>, Markdown, DocBook
+			<li>About 80% of our tech books are written in one of these formats.</li>
+			<li>Tim O'Reilly announced <a href="https://beta.oreilly.com/ideas/jupyter-at-oreilly">full support for Jupyter on May 8.</a></li>
+		</ul>
+	</div></section>
+
+
+	<section class="slide"><div>
+		<h2>The Process</h2>
+		<ul>
+		  <li>You write in the Notebooks, like always.</li>
+		  <li>You check the Notebooks into <a href="atlas.oreilly.com">Atlas</a> to collaborate with your editor, reviewers, and the O’Reilly production department.</li>
+		  <li>You build a beautiful book.</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Getting Beyond Books</h2>
+		<img src="pictures/new-learning-tools.png" class="slide-img" style="float:right; width: 50%" alt="Typity type type">
+		<ul>
+			<li>Books are great, but they lack the features that makes the Notebook such an amazing experience:
+			    <em>interactivity</em>, <em>immediacy</em>, <em>video</em>, etc.</li>
+			<li>This is what <i>learners</i> (not just <i>readers</i>) expect</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>New Content Platform: Jupyter + Docker + tmpnb</h2>
+		<ul>
+			<li><a href="http://jupyter.org/">Jupyter</a>. Other than git and GitHub, we've never had authors demand a tool more than Jupyter.</li>
+			<li><a href="https://www.docker.com/">Docker</a>.  Containerizing the notebooks gave us a simple way to package up and deploy the content and all its dependencies.</li>
+			<li><a href="https://github.com/jupyter/tmpnb">tmpnb</a>. A lightweight system for creating ephemeral sandboxes.
+		 </ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Version 0.1: Just Enough Math</h2>
+		<img src="pictures/jem-strata.png" class="slide-img" style="float:right; width: 50%" alt="Typity type type">
+		<ul>
+			<li>Hosted Notebooks on Docker+tmpnb for a Strata tutorial.</li>
+			<li>Great concept, but performance was an issue.  (Static assets, etc)</li>
+			<li>Catastrophic failure mode. (No content at all!)</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Thebe: Jupyter Cells As a Service</h2>
+		<ul>
+			<li>Jupyter code cells that can be embedded in static web pages.</li>
+			<li><a href="https://github.com/oreillymedia/thebe">Thebe</a>.  MIT-licensed plugin <a href="https://twitter.com/zischwartz">@zischwartz</a> based on <a href="https://github.com/minrk/singlecell">minrk/singlecell</a></li>
+			<li>Supports widgets, plots, and the wide range of Jupyter display protocols.</li>
+			<li>Separates serving of static assets from the notebook.</li>
+			<li>Much more graceful failure mode.</li>
+		</ul>
+	</div></section>
+
+
+  <!---
+
+    Can run any number of language kernels. Just a matter of having that installed.
+
+  -->
+
+	<section class="slide"><div>
+	  <h2>Turns Static Code</h2>
+	  <pre><code>
+	     &lt;pre <mark class="important">data-executable='true'</mark>&gt;
+	        x = np.linspace(0, n, 1000)
+	        plt.plot(x, np.sin(x), x, np.cos(x))
+	        sns.set()
+	        plt.plot(x, np.sin(x), x, np.cos(x))
+         &lt;/pre&gt;
+	</code></pre>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2><a href="thebe.html" target="_blank">Thebe Demo</a></h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>beta.oreilly.com</h2>
+		<img src="pictures/thebe.png" class="slide-img" style="float:right; width: 50%" alt="Typity type type">
+		<ul>
+		  <li><a href="https://beta.oreilly.com/learning/data-visualization-with-seaborn">Data visualization with Seaborn</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/intro-to-svm">Introduction to Support Vector Machines</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/simple-line-plots-with-matplotlib">Simple Line Plots with Matplotlib</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/three-dimensional-plotting-in-matplotlib">Three-dimensional Plotting in Matplotlib</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/an-illustrated-introduction-to-the-t-sne-algorithm">An illustrated introduction to the t-SNE algorithm</a></li>
+		</ul>
+	</div></section>
+
+
+	<section class="slide cover" id="questions"><div>
+		<h2>Questions?</h2>
+		<p>Andrew Odewahn; CTO O'Reilly Media; <a href="https://twitter.com/odewahn">@odewahn</a></p>
+
+	</div></section>
+
+	<p class="badge"><a href="https://github.com/rgbkrk/jupyter-environments-odsc2015">Fork me on Github</a></p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+
+	<script src="assets/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2015 Kyle Kelley, Andrew Odewahn -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-37362544-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
