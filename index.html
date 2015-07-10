@@ -109,13 +109,16 @@
 		</ul>
 	</div></section>
 
+	<section class="slide shout"><div>
+		<h2><a href="http://www.nature.com/news/ipython-interactive-demo-7.21492?article=1.16261" target="_blank">Jupyter Demo</a></h2>
+	</div></section>
 
 	<section class="slide"><div>
 		<h2>The Process</h2>
 		<ul>
 		  <li>You write in the Notebooks, like always.</li>
-		  <li>You check the Notebooks into <a href="atlas.oreilly.com">Atlas</a> to collaborate with your editor, reviewers, and the O’Reilly production department.</li>
-		  <li>You build a beautiful book.</li>
+		  <li>Use git to check the Notebooks into <a href="atlas.oreilly.com">Atlas</a> to collaborate with your editor, reviewers, and the O’Reilly production department.</li>
+		  <li>Push to Atlas to build a book or ebook.</li>
 		</ul>
 	</div></section>
 
@@ -133,10 +136,11 @@
 		<h2>New Content Platform: Jupyter + Docker + tmpnb</h2>
 		<ul>
 			<li><a href="http://jupyter.org/">Jupyter</a>. Other than git and GitHub, we've never had authors demand a tool more than Jupyter.</li>
-			<li><a href="https://www.docker.com/">Docker</a>.  Containerizing the notebooks gave us a simple way to package up and deploy the content and all its dependencies.</li>
-			<li><a href="https://github.com/jupyter/tmpnb">tmpnb</a>. A lightweight system for creating ephemeral sandboxes.
+			<li><a href="https://www.docker.com/">Docker</a>.  Docker is like an ultralight VM that can makes it simple to package and deploy the content and all its dependencies.</li>
+			<li><a href="https://github.com/jupyter/tmpnb">tmpnb</a>. A lightweight system for creating ephemeral Docker containers that run Jupyter.
 		 </ul>
 	</div></section>
+
 
 	<section class="slide"><div>
 		<h2>Version 0.1: Just Enough Math</h2>
@@ -194,6 +198,15 @@
 		</ul>
 	</div></section>
 
+	<section class="slide"><div>
+		<h2>Applications to Teaching Astronomy</h2>
+		<ul>
+			<li><a href="https://github.com/odewahn/interferometry-demo">Lincoln Greenhill and Danny Price experimenting with radio astronomy.</a>.</li>
+			<li>Edit in the Notebook</li>
+			<li>Transform ipynb into HTML with Thebe</li>
+      <li>Transform ipynb into PDF with Atlas</li>
+		</ul>
+	</div></section>
 
 	<section class="slide cover" id="questions"><div>
 		<h2>Questions?</h2>
@@ -201,7 +214,7 @@
 
 	</div></section>
 
-	<p class="badge"><a href="https://github.com/rgbkrk/jupyter-environments-odsc2015">Fork me on Github</a></p>
+	<p class="badge"><a href="https://github.com/odewahn/jupyter-orm-cfa">Fork me on Github</a></p>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
