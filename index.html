@@ -96,36 +96,18 @@
 
 	<section class="slide"><div>
 		<h2>Atlas: O'Reilly's Publishing Toolchain</h2>
-		<img src="pictures/atlas-key-ideas.png" class="slide-img" style="width: 80%" alt="Typity type type">
+		<img src="pictures/atlas-key-ideas.png" class="slide-img" style="width: 75%" alt="Typity type type">
+    <p></p>
+		<ul>
+			<li>Supports <a href="http://oreillymedia.github.io/HTMLBook/">HTML</a>, <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a>, Markdown, DocBook
+			<li>About 80% of our tech books are written in one of these formats.</li>
+		</ul>
 	</div></section>
 
 	<section class="slide shout"><div>
 		<h2><a href="http://atlas.oreilly.com" target="_blank">Atlas Demo</a></h2>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>Authoring with O'Reilly</h2>
-		<img src="pictures/tim-tweet.png" class="slide-img" style="float:right; width: 50%" alt="Typity type type">
-		<ul>
-			<li>Many options: <a href="http://oreillymedia.github.io/HTMLBook/">HTML</a>, <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a>, Markdown, DocBook
-			<li>About 80% of our tech books are written in one of these formats.</li>
-			<li>Tim O'Reilly announced <a href="https://beta.oreilly.com/ideas/jupyter-at-oreilly">full support for Jupyter on May 8.</a></li>
-		</ul>
-	</div></section>
-
-	<section class="slide shout"><div>
-		<h2><a href="http://www.nature.com/news/ipython-interactive-demo-7.21492?article=1.16261" target="_blank">Jupyter Demo</a></h2>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2>The (Idealized!) Process</h2>
-		<ul>
-		  <li>You write in the Notebooks, like always.</li>
-		  <li>Use git to check the Notebooks into <a href="atlas.oreilly.com">Atlas</a> to collaborate with your editor, reviewers, and the O’Reilly production department.</li>
-		  <li>Push to Atlas to build a book or ebook.</li>
-			<li>Create a fully interactive HTML version.</li>
-		</ul>
-	</div></section>
 
 	<section class="slide"><div>
 		<h2>Getting Beyond Books</h2>
@@ -137,8 +119,13 @@
 		</ul>
 	</div></section>
 
+	<section class="slide shout"><div>
+		<h2><a href="http://www.nature.com/news/ipython-interactive-demo-7.21492?article=1.16261" target="_blank">Jupyter Demo</a></h2>
+	</div></section>
+
+
 	<section class="slide"><div>
-		<h2>New Content Platform: Jupyter + Docker + tmpnb</h2>
+		<h2>Content Platform: Jupyter + Docker + tmpnb</h2>
 		<ul>
 			<li><a href="http://jupyter.org/">Jupyter</a>. Other than git and GitHub, we've never had authors demand a tool more than Jupyter.</li>
 			<li><a href="https://www.docker.com/">Docker</a>.  Docker is like an ultralight VM that can makes it simple to package and deploy the content and all its dependencies.</li>
@@ -146,6 +133,16 @@
 		 </ul>
 	</div></section>
 
+	<section class="slide"><div>
+		<h2>The (Idealized!) Process</h2>
+		<img src="pictures/tim-tweet.png" class="slide-img" style="float:right; width: 50%" alt="Typity type type">
+		<ul>
+			<li>Tim O'Reilly announced <a href="https://beta.oreilly.com/ideas/jupyter-at-oreilly"> support for Jupyter in May.</a></li>
+		  <li>You write in the Notebooks, like always.</li>
+		  <li>Use git to check the Notebooks into <a href="atlas.oreilly.com">Atlas</a> for collaboration.</li>
+		  <li>Atlas builds a book, ebook, or site.</li>
+		</ul>
+	</div></section>
 
 	<section class="slide"><div>
 		<h2>Version 0.1: Just Enough Math</h2>
@@ -209,7 +206,7 @@
 			<li><a href="https://github.com/odewahn/interferometry-demo">Lincoln Greenhill and Danny Price experimenting with radio astronomy.</a>.</li>
 			<li>Edit in the Notebook</li>
 			<li>Transform ipynb into HTML with Thebe</li>
-      <li>Transform ipynb into PDF with Atlas</li>
+      <li>Build PDF and EPUB with Atlas</li>
 		</ul>
 	</div></section>
 
